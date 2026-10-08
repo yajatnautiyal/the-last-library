@@ -1,9 +1,6 @@
-/* ==========================================================
-   THE LAST LIBRARY — Archive Node 01
-   Custom CSS (loads AFTER Bootstrap so it can override it)
-   ========================================================== */
 
-/* ---------- 1. DESIGN TOKENS ---------- */
+
+
 :root {
   --ink:        #0b0a09;
   --ink-soft:   #14120f;
@@ -32,7 +29,7 @@ body {
   overflow-x: hidden;
 }
 
-/* faint film grain + vignette over the whole page */
+
 body::before {
   content: "";
   position: fixed; inset: 0;
