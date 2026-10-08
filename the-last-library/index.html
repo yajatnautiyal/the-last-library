@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Library — Archive Node 01</title>
+  <meta name="description" content="An archive preserving the remnants of human civilization. Est. 2095.">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,300;1,500&family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Our custom CSS (always AFTER Bootstrap so we can override it) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-ll fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        The Last Library
+        <small>Archive Node 01</small>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#archive" role="button" data-bs-toggle="dropdown" aria-expanded="false">The Archive +</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#lost-languages">Lost Languages</a></li>
+              <li><a class="dropdown-item" href="#lost-places">Lost Places</a></li>
+              <li><a class="dropdown-item" href="#human-history">Human History</a></li>
+              <li><a class="dropdown-item" href="#lost-art">Lost Art</a></li>
+              <li><a class="dropdown-item" href="#space-exploration">Space Exploration</a></li>
+              <li><hr class="dropdown-divider" style="border-color: var(--line); opacity: 1;"></li>
+              <li><a class="dropdown-item" href="#archive">View the full index</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-ll btn-ll-sm" href="#access">Request access</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-lg-7">
+            <div class="hero-meta rise">
+              <span class="label">2095 — Archive Node 01</span>
+              <span class="label" style="color: var(--cream-dim);">Status: Open to the public</span>
+            </div>
+
+            <h1 class="hero-title rise">
+              <span class="line">The Last</span>
+              <span class="line line-2">Library</span>
+            </h1>
+
+            <p class="hero-tag rise">
+              Everything humanity forgot,<br>
+              <span>we remembered.</span><span class="cursor" aria-hidden="true"></span>
+            </p>
+
+            <div class="rise">
+              <a href="#archive" class="btn btn-ll btn-ll-solid">Enter the archive →</a>
+              <a href="#timeline" class="link-arrow ms-4 d-none d-sm-inline">How we got here <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="emblem rise-emblem" aria-hidden="true">
+              <div class="ring"></div>
+              <div class="ring"></div>
+              <div class="ring"></div>
+              <div class="ring"></div>
+              <div class="emblem-core">
+                <strong>2095</strong>
+                <span class="label">Node 01 · Online</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="container">
+          <span class="scroll-cue">Scroll to descend</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats" aria-label="Archive at a glance">
+      <div class="container">
+        <div class="row text-md-start">
+          <div class="col-6 col-md-3"><div class="stat"><strong>4.2M</strong><span class="label">Records preserved</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><strong>1,846</strong><span class="label">Languages saved</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><strong>312</strong><span class="label">Places mapped</span></div></div>
+          <div class="col-6 col-md-3"><div class="stat"><strong>71%</strong><span class="label">Still unrecovered</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THE ARCHIVE ===================== -->
+    <section class="section" id="archive">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-8">
+            <span class="label">The Archive · Five collections</span>
+            <h2 class="section-title">What is left, <em>catalogued.</em></h2>
+          </div>
+          <div class="col-lg-4">
+            <p class="section-lead">Each collection is incomplete by design. We show you what we recovered, and how much we have yet to find.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4" id="lost-languages">
+            <article class="archive-card">
+              <span class="label">Collection LL-01</span>
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 10h36v22H24l-9 8v-8H6z"/><path d="M14 18h20M14 25h12"/></svg>
+              <h3>Lost Languages</h3>
+              <p>Voice recordings, grammars and last-speaker interviews from tongues that no longer have a living community.</p>
+              <div class="recovery">
+                <span class="label"><span>Recovered</span><b>64%</b></span>
+                <div class="bar"><i style="width:64%"></i></div>
+                <a href="#lost-languages" class="link-arrow">Open collection <span>→</span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4" id="lost-places">
+            <article class="archive-card">
+              <span class="label">Collection LL-02</span>
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><path d="M3 40 17 14l8 14 5-8 15 20z"/><circle cx="35" cy="10" r="3"/></svg>
+              <h3>Lost Places</h3>
+              <p>Drowned coastlines, abandoned cities and glaciers that melted away. Surveyed, scanned and mapped before the last visit.</p>
+              <div class="recovery">
+                <span class="label"><span>Recovered</span><b>38%</b></span>
+                <div class="bar"><i style="width:38%"></i></div>
+                <a href="#lost-places" class="link-arrow">Open collection <span>→</span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4" id="human-history">
+            <article class="archive-card">
+              <span class="label">Collection LL-03</span>
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 14 24 6l18 8M10 16v20M20 16v20M28 16v20M38 16v20M6 40h36"/></svg>
+              <h3>Human History</h3>
+              <p>Letters, ledgers, treaties and ordinary diaries. The long record of how people lived, argued and rebuilt.</p>
+              <div class="recovery">
+                <span class="label"><span>Recovered</span><b>52%</b></span>
+                <div class="bar"><i style="width:52%"></i></div>
+                <a href="#human-history" class="link-arrow">Open collection <span>→</span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4" id="lost-art">
+            <article class="archive-card">
+              <span class="label">Collection LL-04</span>
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="34" height="34"/><rect x="13" y="13" width="22" height="22"/><path d="m13 31 8-9 6 6 4-4 4 5"/></svg>
+              <h3>Lost Art</h3>
+              <p>Paintings known only from photographs, songs known only from notation, and films with a single surviving reel.</p>
+              <div class="recovery">
+                <span class="label"><span>Recovered</span><b>29%</b></span>
+                <div class="bar"><i style="width:29%"></i></div>
+                <a href="#lost-art" class="link-arrow">Open collection <span>→</span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4" id="space-exploration">
+            <article class="archive-card">
+              <span class="label">Collection LL-05</span>
+              <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="9"/><ellipse cx="24" cy="24" rx="21" ry="7" transform="rotate(-25 24 24)"/></svg>
+              <h3>Space Exploration</h3>
+              <p>Flight logs, telemetry and the first photographs of Earth from far away. Every mission we ever sent, and what it saw.</p>
+              <div class="recovery">
+                <span class="label"><span>Recovered</span><b>81%</b></span>
+                <div class="bar"><i style="width:81%"></i></div>
+                <a href="#space-exploration" class="link-arrow">Open collection <span>→</span></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 6: call to action -->
+          <div class="col-md-6 col-lg-4">
+            <article class="archive-card archive-card-wide">
+              <span class="label">Unindexed</span>
+              <h3 class="mt-4">Know something we don't?</h3>
+              <p>Most of the archive is still missing. If you hold a fragment, a recording or a family record, send it to Node 01.</p>
+              <div><a href="#access" class="btn btn-ll btn-ll-sm">Submit a fragment →</a></div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED ===================== -->
+    <section class="section featured" id="featured">
+      <div class="container">
+        <span class="label">Featured archives</span>
+        <h2 class="section-title">Three records to begin with.</h2>
+
+        <div class="row g-5 mt-3 align-items-start">
+
+          <!-- Big featured manuscript -->
+          <div class="col-lg-7">
+            <div class="manuscript">
+              <span class="stamp">Restored</span>
+              <span class="label">Record LL-0417 · Lost Languages</span>
+              <p class="quote">
+                “We spoke it only at night, so the day would not
+                <span class="redacted">forget what we had</span>
+                taken from it.”
+              </p>
+              <p class="mb-0" style="font-size:.9rem;">Spoken by the last known fluent elder of the Marrow Coast dialect, recorded 2041. Part of the text is damaged and cannot be recovered.</p>
+            </div>
+          </div>
+
+          <!-- Spec + list -->
+          <div class="col-lg-5">
+            <span class="label">About this record</span>
+            <ul class="spec">
+              <li><span>Format</span><span>Audio, 41 min</span></li>
+              <li><span>Recorded</span><span>2041</span></li>
+              <li><span>Condition</span><span>Restored from tape</span></li>
+              <li><span>Access</span><span>Open</span></li>
+            </ul>
+            <a href="#access" class="btn btn-ll">Request this record →</a>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-4">
+          <div class="col-12">
+            <ul class="mini-list">
+              <li><a href="#lost-places"><span class="name">The Drowned Quarter of Old Venara</span><span class="code d-none d-sm-inline">LL-0233 · Lost Places</span></a></li>
+              <li><a href="#space-exploration"><span class="name">Flight log of the final crewed orbiter</span><span class="code d-none d-sm-inline">LL-0981 · Space</span></a></li>
+              <li><a href="#lost-art"><span class="name">The Seventh Reel: a film in one frame set</span><span class="code d-none d-sm-inline">LL-0602 · Lost Art</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TIMELINE ===================== -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="text-center">
+          <span class="label">Timeline</span>
+          <h2 class="section-title">Seventy years of remembering.</h2>
+          <p class="section-lead mx-auto">How the archive went from a rescue effort to the last library on Earth.</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-year">2025</div>
+            <h3>The Great Backup</h3>
+            <p>Volunteers begin copying public records, books and recordings onto durable storage, just in case.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2041</div>
+            <h3>The last print library closes</h3>
+            <p>Funding ends for the final public lending library. Its shelves are scanned over eleven weeks.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2067</div>
+            <h3>The Long Blackout</h3>
+            <p>Regional networks fail for most of a year. Whatever was stored only online is lost.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2079</div>
+            <h3>Node 01 is built</h3>
+            <p>A sealed vault, powered and cooled by the ground around it, is completed beneath a mountain.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-year">2095</div>
+            <h3>The doors open</h3>
+            <p>The Last Library welcomes its first visitors. The archive is open, and still unfinished.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" style="border-top:1px solid var(--line);">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <span class="label">About the library</span>
+          </div>
+          <div class="col-lg-9">
+            <p class="about-quote">
+              We are not here to rebuild the world. <span>We are here so that nobody has to wonder what it was like.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-5">
+          <div class="col-md-4 offset-lg-3 col-lg-3">
+            <div class="principle">
+              <h4>Keep everything</h4>
+              <p>We do not decide what is worth saving. Ordinary things are often the rarest.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="principle">
+              <h4>Show the gaps</h4>
+              <p>Every record states what is missing. An honest hole is better than a guessed fill.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="principle">
+              <h4>Open to all</h4>
+              <p>No fee, no membership. Anyone can walk in or request a copy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACCESS REQUEST ===================== -->
+    <section class="section access" id="access">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-5">
+            <span class="label">Contact · Access request</span>
+            <h2 class="section-title">Ask the archive.</h2>
+            <p class="section-lead mb-5">Request a record, book a visit to Node 01, or send us a fragment. A curator replies within seven days.</p>
+
+            <div class="contact-line"><span class="label">Location</span><span>Node 01, Sublevel 9, Cold Ridge</span></div>
+            <div class="contact-line"><span class="label">Hours</span><span>Daily, 06:00 – 22:00 (Archive time)</span></div>
+            <div class="contact-line"><span class="label">Write to us</span><span>curators@lastlibrary.archive</span></div>
+          </div>
+
+          <div class="col-lg-6 offset-lg-1">
+            <form class="form-ll" action="#access" method="get">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Ada Okonkwo" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="type" class="form-label">I want to</label>
+                  <select class="form-select" id="type" name="type">
+                    <option>Request a record</option>
+                    <option>Book a visit</option>
+                    <option>Submit a fragment</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="collection" class="form-label">Collection</label>
+                  <select class="form-select" id="collection" name="collection">
+                    <option>Lost Languages</option>
+                    <option>Lost Places</option>
+                    <option>Human History</option>
+                    <option>Lost Art</option>
+                    <option>Space Exploration</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us what you are looking for."></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="agree" required>
+                    <label class="form-check-label" for="agree">I will treat what I find here with care.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-ll btn-ll-solid">Send request →</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <span class="label">The Last Library</span>
+          <p class="mt-3" style="max-width:22rem;">An archive preserving the remnants of human civilization. Est. 2095.</p>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <span class="label">The Archive</span>
+          <ul class="mt-3">
+            <li><a href="#lost-languages">Lost Languages</a></li>
+            <li><a href="#lost-places">Lost Places</a></li>
+            <li><a href="#human-history">Human History</a></li>
+            <li><a href="#lost-art">Lost Art</a></li>
+            <li><a href="#space-exploration">Space Exploration</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <span class="label">The Library</span>
+          <ul class="mt-3">
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#access">Access request</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-mark" aria-hidden="true">The Last Library</div>
+
+      <div class="footer-base">
+        <span class="label">© 2095 Archive Node 01. All records held in trust.</span>
+        <span class="label"><a href="#home">Back to top ↑</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: ONLY needed for the mobile menu + dropdown. We write zero JavaScript ourselves. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
